@@ -44,6 +44,6 @@ jobs:
       with:
         node-version: 12.x
 
-    - run: npm install --no-audit
+    - run: npm ci
 
     - run: npm run build
