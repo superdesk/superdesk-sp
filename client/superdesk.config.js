@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         },
 
         publisher: {
-            protocol: 'https',
+            protocol: 'http',
             tenant: process.env.PUBLISHER_API_SUBDOMAIN || '',
             domain: process.env.PUBLISHER_API_DOMAIN || 'localhost',
             base: 'api/v2',
