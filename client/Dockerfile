@@ -1,5 +1,5 @@
 # BUILD
-FROM node:12 AS build
+FROM node:14 AS build
 
 # install client
 WORKDIR /tmp/client
