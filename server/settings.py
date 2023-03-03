@@ -52,8 +52,6 @@ if env('REDIS_PORT'):
     REDIS_URL = env('REDIS_PORT').replace('tcp:', 'redis:')
 BROKER_URL = env('CELERY_BROKER_URL', REDIS_URL)
 
-SECRET_KEY = env('SECRET_KEY', '')
-
 DEFAULT_LANGUAGE = 'en'
 
 LANGUAGES = [
