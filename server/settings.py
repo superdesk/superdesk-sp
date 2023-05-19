@@ -75,6 +75,7 @@ LANGUAGES = [
 
 INSTALLED_APPS = [
     'apps.languages',
+    'planning',
 ]
 
 # special characters that are disallowed

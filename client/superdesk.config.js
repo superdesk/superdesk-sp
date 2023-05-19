@@ -7,11 +7,13 @@
 module.exports = function(grunt) {
     return {
         apps: [
-            'superdesk-publisher'
+            'superdesk-planning',
+            'superdesk-publisher',
         ],
         importApps: [
-            '..',
-            'superdesk-publisher'
+            '../index',
+            'superdesk-planning',
+            'superdesk-publisher',
         ],
         defaultRoute: '/workspace/personal',
         validatorMediaMetadata: {
@@ -61,9 +63,12 @@ module.exports = function(grunt) {
             editor3: true,
             editorHighlights: true,
             nestedItemsInOutputStage: true,
+            planning: true,
         },
         workspace: {
-            analytics: true
+            analytics: true,
+            planning: true,
+            assignments: true,
         }
     };
 };
