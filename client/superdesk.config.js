@@ -19,10 +19,10 @@ module.exports = function(grunt) {
                 required: true
             },
             alt_text: {
-                required: true
+                required: false
             },
             description_text: {
-                required: true
+                required: false
             },
             copyrightholder: {
                 required: false
