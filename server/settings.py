@@ -88,7 +88,7 @@ SCHEMA = {
     'picture': {
         'slugline': {'required': False},
         'headline': {'required': True},
-        'description_text': {'required': True},
+        'description_text': {'required': False},
         'byline': {'required': False},
         'copyrightnotice': {'required': False},
         'usageterms': {'required': False},
@@ -97,7 +97,7 @@ SCHEMA = {
     'video': {
         'slugline': {'required': False},
         'headline': {'required': True},
-        'description_text': {'required': True},
+        'description_text': {'required': False},
         'byline': {'required': True},
         'copyrightnotice': {'required': False},
         'usageterms': {'required': False},
@@ -140,7 +140,7 @@ VALIDATOR_MEDIA_METADATA = {
         "required": True,
     },
     "description_text": {
-        "required": True,
+        "required": False,
     },
     "byline": {
         "required": False,
