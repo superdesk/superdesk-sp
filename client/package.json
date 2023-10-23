@@ -2,7 +2,7 @@
     "name": "superdesk",
     "license": "GPL-3.0",
     "dependencies": {
-        "superdesk-core": "github:superdesk/superdesk-client-core#authoring-react-post-broadcasting",
+        "superdesk-core": "github:superdesk/superdesk-client-core#v2.6.2",
         "superdesk-publisher": "github:superdesk/superdesk-publisher#develop"
     },
     "scripts": {
