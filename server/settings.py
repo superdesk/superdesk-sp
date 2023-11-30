@@ -150,3 +150,5 @@ VALIDATOR_MEDIA_METADATA = {
         "required": False,
     },
 }
+
+DEMO_DATA=1
