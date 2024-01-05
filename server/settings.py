@@ -149,3 +149,5 @@ VALIDATOR_MEDIA_METADATA = {
         "required": False,
     },
 }
+
+KEYWORDS_ADD_MISSING_ON_PUBLISH = True
