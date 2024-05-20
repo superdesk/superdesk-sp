@@ -1,3 +1,5 @@
-honcho
 gunicorn
+honcho
+
 git+https://github.com/superdesk/superdesk-core.git@release/2.7#egg=superdesk-core
+git+https://github.com/superdesk/superdesk-planning.git@release/2.7#egg=superdesk-planning
