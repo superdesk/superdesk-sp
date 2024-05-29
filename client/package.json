@@ -3,8 +3,8 @@
     "license": "AGPL-3.0",
     "dependencies": {
         "superdesk-core": "github:tomaskikutis/superdesk-client-core#custom-editor3-blocks",
-        "superdesk-publisher": "github:superdesk/superdesk-publisher#2.7",
-        "superdesk-planning": "github:superdesk/superdesk-planning#release/2.7"
+        "superdesk-planning": "github:superdesk/superdesk-planning#release/2.7",
+        "superdesk-publisher": "github:superdesk/superdesk-publisher#2.7"
     },
     "scripts": {
         "build": "npx @superdesk/build-tools build-root-repo ./",
