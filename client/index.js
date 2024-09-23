@@ -20,6 +20,10 @@ setTimeout(() => {
                 load: () => import('superdesk-planning/client/planning-extension'),
             },
             {
+                id: 'publisher-extension',
+                load: () => import('superdesk-publisher/client/publisher-extension'),
+            },
+            {
                 id: 'broadcasting',
                 load: () => import('superdesk-core/scripts/extensions/broadcasting').then((broadcasting) => {
                     broadcasting.setCustomizations({
