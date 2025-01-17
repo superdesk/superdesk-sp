@@ -45,6 +45,8 @@ module.exports = function() {
                 'Correct item': 'Update item',
                 'Corrected': 'Updated',
                 'Send Correction': 'Send update',
+		'Correction': 'Update',
+		'Being Corrected': 'Being Updated',
                 'Update': 'New version',
                 'UPDATE': 'New version',
                 'Update created': 'New version created',
