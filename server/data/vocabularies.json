@@ -252,6 +252,7 @@
         "display_name": "Replacement Words",
         "type": "manageable",
         "selection_type": "do not show",
+        "unique_field": "existing",
         "items": [
             {"is_active": true, "existing": "FIXME", "replacement": ""}
         ],
@@ -259,7 +260,6 @@
             "existing": {},
             "replacement": {}
         },
-        "unique_field": "existing"
     },
     {
         "_id": "locators",
