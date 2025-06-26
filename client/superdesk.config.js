@@ -119,7 +119,7 @@ module.exports = function() {
         workspace: {
             planning: true,
             assignments: true,
-            analytics: true
+            analytics: true,
         },
 
         ui: {
