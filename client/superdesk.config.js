@@ -15,7 +15,7 @@ module.exports = function() {
             '../index',
             'superdesk-publisher',
             'superdesk-planning',
-            'superdesk.analytics'
+            'superdesk-analytics'
         ],
 
         defaultRoute: '/workspace/monitoring',
