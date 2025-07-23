@@ -4,6 +4,12 @@
 #
 #    pip-compile requirements.in
 #
+aiohappyeyeballs==2.6.1
+    # via aiohttp
+aiohttp==3.12.14
+    # via slackclient
+aiosignal==1.4.0
+    # via aiohttp
 amqp==5.3.1
     # via kombu
 arrow==1.3.0
@@ -11,7 +17,11 @@ arrow==1.3.0
     #   eve-elastic
     #   superdesk-core
 async-timeout==5.0.1
-    # via redis
+    # via
+    #   aiohttp
+    #   redis
+attrs==25.3.0
+    # via aiohttp
 authlib==1.4.1
     # via superdesk-core
 babel==2.17.0
@@ -26,9 +36,9 @@ blinker==1.9.0
     #   flask-mail
     #   sentry-sdk
     #   superdesk-core
-boto3==1.38.44
+boto3==1.39.11
     # via superdesk-core
-botocore==1.38.44
+botocore==1.39.11
     # via
     #   boto3
     #   s3transfer
@@ -38,13 +48,13 @@ celery[redis]==5.4.0
     # via
     #   celery-redbeat
     #   superdesk-core
-celery-redbeat==2.3.2
+celery-redbeat==2.3.3
     # via -r requirements.in
 cerberus==1.3.7
     # via
     #   eve
     #   superdesk-core
-certifi==2025.6.15
+certifi==2025.7.14
     # via
     #   elastic-apm
     #   elasticsearch
@@ -76,7 +86,7 @@ click-repl==0.3.0
     # via celery
 croniter==6.0.0
     # via superdesk-core
-cryptography==45.0.4
+cryptography==45.0.5
     # via
     #   authlib
     #   jwcrypto
@@ -117,6 +127,10 @@ flask-oidc-ex==0.6.2
     # via superdesk-core
 flask-script==2.0.6
     # via superdesk-core
+frozenlist==1.7.0
+    # via
+    #   aiohttp
+    #   aiosignal
 future==1.0.0
     # via python-twitter
 gunicorn==23.0.0
@@ -132,7 +146,9 @@ httplib2==0.22.0
 icalendar==5.0.13
     # via superdesk-planning
 idna==3.10
-    # via requests
+    # via
+    #   requests
+    #   yarl
 itsdangerous==1.1.0
     # via
     #   flask
@@ -172,11 +188,15 @@ markupsafe==2.0.1
     #   superdesk-core
 mongolock @ git+https://github.com/superdesk/mongolock.git@v1
     # via superdesk-core
+multidict==6.6.3
+    # via
+    #   aiohttp
+    #   yarl
 oauth2client==4.1.3
     # via flask-oidc-ex
 oauthlib==3.3.1
     # via requests-oauthlib
-orderly-set==5.4.1
+orderly-set==5.5.0
     # via deepdiff
 packaging==25.0
     # via gunicorn
@@ -186,6 +206,10 @@ pillow==11.1.0
     #   superdesk-core
 prompt-toolkit==3.0.51
     # via click-repl
+propcache==0.3.2
+    # via
+    #   aiohttp
+    #   yarl
 pyasn1==0.6.1
     # via
     #   ldap3
@@ -250,9 +274,9 @@ requests-oauthlib==2.0.0
     # via python-twitter
 rsa==4.9.1
     # via oauth2client
-s3transfer==0.13.0
+s3transfer==0.13.1
     # via boto3
-sentry-sdk[flask]==2.31.0
+sentry-sdk[flask]==2.33.2
     # via superdesk-core
 sgmllib3k==1.0.0
     # via feedparser
@@ -263,6 +287,8 @@ six==1.17.0
     #   flask-oidc-ex
     #   oauth2client
     #   python-dateutil
+slackclient==2.9.4
+    # via -r requirements.in
 superdesk-analytics @ git+https://github.com/superdesk/superdesk-analytics.git@release/2.10
     # via -r requirements.in
 superdesk-core @ git+https://github.com/superdesk/superdesk-core.git@release/2.9
@@ -271,10 +297,13 @@ superdesk-planning @ git+https://github.com/superdesk/superdesk-planning.git@rel
     # via -r requirements.in
 tenacity==9.1.2
     # via celery-redbeat
-types-python-dateutil==2.9.0.20250516
+types-python-dateutil==2.9.0.20250708
     # via arrow
-typing-extensions==4.14.0
-    # via jwcrypto
+typing-extensions==4.14.1
+    # via
+    #   aiosignal
+    #   jwcrypto
+    #   multidict
 tzdata==2025.2
     # via
     #   celery
@@ -308,3 +337,5 @@ wrapt==1.17.2
     # via elastic-apm
 xmlsec==1.3.14
     # via superdesk-core
+yarl==1.20.1
+    # via aiohttp
