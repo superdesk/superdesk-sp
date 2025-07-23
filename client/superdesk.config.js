@@ -94,6 +94,7 @@ module.exports = function() {
             customAuthoringTopbar: {
                 toDesk: true,
             },
+            slackNotifications: 1,
         },
 
         item_profile: { change_profile: 1 },
