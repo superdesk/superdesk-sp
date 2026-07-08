@@ -68,6 +68,7 @@ module.exports = function() {
             swimlane: {columnsLimit: 99},
             swimlane: {defaultNumberOfColumns: 4},
             editor3: true,
+            tiptapEditor: true,
             editorHighlights: true,
             noPublishOnAuthoringDesk: true,
             sendToPersonal: true,
