@@ -16,6 +16,9 @@
     "devDependencies": {
         "@superdesk/build-tools": "^1.2.0"
     },
+    "overrides": {
+        "typescript": "~4.9.5"
+    },
     "volta": {
         "node": "22.22.0"
     }
